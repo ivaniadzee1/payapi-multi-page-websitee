@@ -1,5 +1,4 @@
 "use client";
-import Footer from "@/app/components/Footer";
 import { SignupValidationSchema } from "@/app/validationScheme";
 import { Formik, useFormik } from "formik";
 import { SetStateAction, useState } from "react";
@@ -33,7 +32,7 @@ export default function Page() {
       console.log(values);
       setSubmitted(true);
       resetForm();
-      notify(); // Notify here on form submission
+      notify(); 
     },
     validationSchema: SignupValidationSchema,
   });
